@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareClinics Direct Business Portal — Executive Briefing &amp; Roadmap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+    }
+    .gradient-header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0369a1 100%);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+
+  <!-- TOP EXECUTIVE BANNER -->
+  <header class="gradient-header text-white px-8 py-10 shadow-xl">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-wrap justify-between items-center gap-6">
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="bg-sky-500/20 text-sky-300 border border-sky-400/30 text-xs px-3 py-1 rounded-full font-semibold uppercase tracking-wider">Executive Overview</span>
+            <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-xs px-3 py-1 rounded-full font-semibold">Phase 1 Completed: 30th July 2026</span>
+          </div>
+          <h1 class="text-3xl lg:text-4xl font-extrabold tracking-tight mt-3">CareClinics Direct Business Portal</h1>
+          <p class="text-slate-300 text-sm lg:text-base mt-2 max-w-2xl">
+            Enterprise multi-tenant ecosystem in collaboration with COMPUMED, synchronizing Corporate Clients, Healthcare Providers, and Central Operations.
+          </p>
+        </div>
+        <div class="flex items-center gap-4 bg-slate-800/80 p-4 rounded-xl border border-slate-700 shadow-inner">
+          <div class="text-right">
+            <p class="text-xs text-slate-400 font-medium">Phase 1 Delivery</p>
+            <p class="text-xl font-bold text-emerald-400">Completed (30 Jul '26)</p>
+          </div>
+          <div class="h-10 w-px bg-slate-700"></div>
+          <div class="text-right">
+            <p class="text-xs text-slate-400 font-medium">Phase 2 Delivery</p>
+            <p class="text-xl font-bold text-amber-400">Finance Module</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-7xl mx-auto px-6 py-8">
+
+    <!-- PROJECT IMPLEMENTATION TIMELINE -->
+    <section class="glass-card p-6 lg:p-8 rounded-2xl mb-8 shadow-sm">
+      <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 mb-6">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-sky-600 bg-sky-50 border border-sky-200 px-2.5 py-0.5 rounded-full">Project Roadmap</span>
+            <span class="text-xs text-slate-500 font-medium">COMPUMED &bull; CareClinics DBP</span>
+          </div>
+          <h2 class="text-xl font-bold text-slate-900 mt-1">Delivery Timeline &amp; Milestone Roadmap</h2>
+        </div>
+        <div class="flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-800 px-3.5 py-1.5 rounded-xl text-xs font-bold">
+          <i class="fa-solid fa-circle-check text-emerald-600"></i> Phase 1 Delivered: 30th July 2026
+        </div>
+      </div>
+
+      <!-- TIMELINE 4-QUARTER GRID -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <!-- Q3 2025 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-extrabold px-2.5 py-1 rounded bg-slate-800 text-white">Q3 2025</span>
+              <span class="text-[11px] text-slate-500 font-semibold">Initiation</span>
+            </div>
+            <h4 class="font-bold text-sm text-slate-950 mt-2">Kick-Off &amp; Data Migration</h4>
+            <ul class="text-xs text-slate-600 mt-2 space-y-1.5 list-disc list-inside">
+              <li><strong>July '25:</strong> Kick-off meeting &amp; data collection</li>
+              <li><strong>Aug '25:</strong> Data migration started</li>
+              <li><strong>5th Sept '25:</strong> Data migration completed; awaiting UI from COMPUMED</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Q4 2025 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-extrabold px-2.5 py-1 rounded bg-slate-800 text-white">Q4 2025</span>
+              <span class="text-[11px] text-slate-500 font-semibold">Demo &amp; Testing</span>
+            </div>
+            <h4 class="font-bold text-sm text-slate-950 mt-2">Module Releases &amp; Review</h4>
+            <ul class="text-xs text-slate-600 mt-2 space-y-1.5 list-disc list-inside">
+              <li><strong>Oct '25:</strong> Demo site shared (CRM &amp; Provider Module); MC days/diagnosis feedback</li>
+              <li><strong>Nov '25:</strong> 3 modules released; team training (21st Nov)</li>
+              <li><strong>Dec '25:</strong> Scheduled UAT, KAM panel outreach &amp; helpdesk readiness</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Q1 2026 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-extrabold px-2.5 py-1 rounded bg-slate-800 text-white">Q1 2026</span>
+              <span class="text-[11px] text-slate-500 font-semibold">Sign-Off &amp; Hosting</span>
+            </div>
+            <h4 class="font-bold text-sm text-slate-950 mt-2">UAT Completion &amp; Sizing</h4>
+            <ul class="text-xs text-slate-600 mt-2 space-y-1.5 list-disc list-inside">
+              <li><strong>Jan '26:</strong> UAT completed; Care360 domain &amp; server proposal from COMPUMED</li>
+              <li><strong>Feb '26:</strong> CCHS IT team reviewed server costing</li>
+              <li><strong>Mar '26:</strong> Ongoing executive management discussions</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Q2/Q3 2026 -->
+        <div class="p-4 rounded-xl bg-emerald-50/70 border border-emerald-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-extrabold px-2.5 py-1 rounded bg-emerald-700 text-white">Q2 / Q3 2026</span>
+              <span class="text-[11px] text-emerald-800 font-bold">Go-Live Handover</span>
+            </div>
+            <h4 class="font-bold text-sm text-slate-950 mt-2">Deployment &amp; Handover</h4>
+            <ul class="text-xs text-slate-700 mt-2 space-y-1.5 list-disc list-inside">
+              <li><strong>Apr–Jun '26:</strong> RFQ &amp; Nimbus appointed as hoster</li>
+              <li><strong>30th July '26:</strong> DC/DR drill completed; <span class="font-bold text-emerald-800">Phase 1 Delivery Completed</span></li>
+              <li><strong>Aug '26:</strong> Handover to CH, logins released, 1st customer: CCHS HR</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PHASE 1 VS PHASE 2 ARCHITECTURE OVERVIEW -->
+    <div class="mb-8">
+      <div class="flex items-center justify-between mb-4">
+        <div>
+          <h2 class="text-xl font-bold text-slate-900">Platform Deployment Stages</h2>
+          <p class="text-sm text-slate-500">Operational readiness breakdown across enterprise release phases</p>
+        </div>
+        <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-bold border border-emerald-200">Phase 1 Live &bull; Completed 30th July 2026</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+        <!-- CRM (Phase 1) -->
+        <div onclick="switchModule('crm')" class="glass-card p-5 rounded-2xl shadow-sm hover:shadow-md transition cursor-pointer border-t-4 border-t-indigo-600 group">
+          <div class="flex justify-between items-start">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Phase 1 (Ready)</span>
+            <div class="w-8 h-8 bg-indigo-50 text-indigo-600 rounded-lg flex items-center justify-center text-sm">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mt-2 group-hover:text-indigo-600 transition">CRM Operations</h3>
+          <p class="text-slate-500 text-xs mt-1.5">Client master records, benefit caps, panel allocation, and nationwide claim audits[cite: 2].</p>
+        </div>
+
+        <!-- Clinic (Phase 1) -->
+        <div onclick="switchModule('clinic')" class="glass-card p-5 rounded-2xl shadow-sm hover:shadow-md transition cursor-pointer border-t-4 border-t-emerald-600 group">
+          <div class="flex justify-between items-start">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Phase 1 (Ready)</span>
+            <div class="w-8 h-8 bg-emerald-50 text-emerald-600 rounded-lg flex items-center justify-center text-sm">
+              <i class="fa-solid fa-hospital-user"></i>
+            </div>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mt-2 group-hover:text-emerald-600 transition">Clinic Provider</h3>
+          <p class="text-slate-500 text-xs mt-1.5">Real-time entitlement checks, manual/PDF claim generation, and clinic profiles[cite: 1].</p>
+        </div>
+
+        <!-- Customer / HR (Phase 1) -->
+        <div onclick="switchModule('customer')" class="glass-card p-5 rounded-2xl shadow-sm hover:shadow-md transition cursor-pointer border-t-4 border-t-sky-600 group">
+          <div class="flex justify-between items-start">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Phase 1 (Ready)</span>
+            <div class="w-8 h-8 bg-sky-50 text-sky-600 rounded-lg flex items-center justify-center text-sm">
+              <i class="fa-solid fa-building-user"></i>
+            </div>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mt-2 group-hover:text-sky-600 transition">Customer / HR</h3>
+          <p class="text-slate-500 text-xs mt-1.5">Excel bulk member onboarding, dependent maintenance, and health spend trends[cite: 3].</p>
+        </div>
+
+        <!-- Member (Phase 1 - Pending PHR CCHS) -->
+        <div onclick="switchModule('member')" class="glass-card p-5 rounded-2xl shadow-sm hover:shadow-md transition cursor-pointer border-t-4 border-t-purple-600 group bg-purple-50/20">
+          <div class="flex justify-between items-start">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-purple-100 text-purple-800">Phase 1 (Discussion)</span>
+            <div class="w-8 h-8 bg-purple-50 text-purple-600 rounded-lg flex items-center justify-center text-sm">
+              <i class="fa-solid fa-user-shield"></i>
+            </div>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mt-2 group-hover:text-purple-600 transition">Member Module</h3>
+          <p class="text-slate-500 text-xs mt-1.5">Employee portal for claims &amp; clinic lookup[cite: 5]. Discussed once PHR CCHS apps complete.</p>
+        </div>
+
+        <!-- Finance (Phase 2) -->
+        <div onclick="switchModule('finance')" class="glass-card p-5 rounded-2xl shadow-sm hover:shadow-md transition cursor-pointer border-t-4 border-t-amber-500 group bg-amber-50/20">
+          <div class="flex justify-between items-start">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800">Phase 2 (Roadmap)</span>
+            <div class="w-8 h-8 bg-amber-50 text-amber-600 rounded-lg flex items-center justify-center text-sm">
+              <i class="fa-solid fa-file-invoice-dollar"></i>
+            </div>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mt-2 group-hover:text-amber-600 transition">Finance Module</h3>
+          <p class="text-slate-500 text-xs mt-1.5">Automated claims batching, TPP submission pipeline, and automated invoice creation[cite: 4].</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORKFLOW PIPELINE -->
+    <section class="glass-card p-6 lg:p-8 rounded-2xl mb-8">
+      <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 mb-6">
+        <div>
+          <h2 class="text-xl font-bold text-slate-900">End-to-End Business Flow for Executive Stakeholders</h2>
+          <p class="text-sm text-slate-500">How corporate governance, point-of-care verification, and claims settlement integrate</p>
+        </div>
+        <span class="bg-slate-100 text-slate-700 text-xs px-3 py-1.5 rounded-lg border font-medium">Unified Database Seeded Across All Roles</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 relative">
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+          <div class="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-sm mb-3">1</div>
+          <h4 class="font-bold text-sm text-slate-900">Corporate &amp; Policy Setup</h4>
+          <p class="text-xs text-slate-600 mt-1">CRM configures corporate caps (Per Visit/Month/Year limits, Panelship networks, and SST/TIN details)[cite: 2].</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+          <div class="w-8 h-8 rounded-lg bg-sky-600 text-white flex items-center justify-center font-bold text-sm mb-3">2</div>
+          <h4 class="font-bold text-sm text-slate-900">Member Onboarding</h4>
+          <p class="text-xs text-slate-600 mt-1">HR registers workforce via Excel Bulk Enrollment templates with automated family dependent linking[cite: 3].</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+          <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-sm mb-3">3</div>
+          <h4 class="font-bold text-sm text-slate-900">Point-of-Care Claiming</h4>
+          <p class="text-xs text-slate-600 mt-1">Clinics verify entitlement limits in real time and submit claims immediately (manual data or PDF upload)[cite: 1].</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+          <div class="w-8 h-8 rounded-lg bg-amber-600 text-white flex items-center justify-center font-bold text-sm mb-3">4</div>
+          <h4 class="font-bold text-sm text-slate-900">Settlement &amp; Finance</h4>
+          <p class="text-xs text-slate-600 mt-1">Phase 1 provides invoice tracking[cite: 1]; Phase 2 introduces automated batching to finance and direct TPP pipeline[cite: 4].</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE MODULE EXPLORER -->
+    <div class="glass-card rounded-2xl shadow-sm overflow-hidden mb-8">
+      <!-- Navigation Bar -->
+      <div class="flex border-b border-slate-200 bg-slate-100/60 px-6 pt-3 gap-6 overflow-x-auto">
+        <button onclick="switchModule('crm')" id="tab-crm" class="pb-3 text-sm tracking-wide font-semibold text-slate-500 hover:text-slate-800 flex items-center gap-2 border-b-2 border-transparent">
+          <i class="fa-solid fa-network-wired text-indigo-600"></i> CRM Portal
+        </button>
+        <button onclick="switchModule('clinic')" id="tab-clinic" class="pb-3 text-sm tracking-wide font-semibold text-slate-500 hover:text-slate-800 flex items-center gap-2 border-b-2 border-transparent">
+          <i class="fa-solid fa-hospital-user text-emerald-600"></i> Clinic Portal
+        </button>
+        <button onclick="switchModule('customer')" id="tab-customer" class="pb-3 text-sm tracking-wide font-semibold text-slate-500 hover:text-slate-800 flex items-center gap-2 border-b-2 border-transparent">
+          <i class="fa-solid fa-building-user text-sky-600"></i> Customer / HR Portal
+        </button>
+        <button onclick="switchModule('member')" id="tab-member" class="pb-3 text-sm tracking-wide font-semibold text-slate-500 hover:text-slate-800 flex items-center gap-2 border-b-2 border-transparent">
+          <i class="fa-solid fa-user-shield text-purple-600"></i> Member Portal
+        </button>
+        <button onclick="switchModule('finance')" id="tab-finance" class="pb-3 text-sm tracking-wide font-semibold text-slate-500 hover:text-slate-800 flex items-center gap-2 border-b-2 border-transparent">
+          <i class="fa-solid fa-file-invoice-dollar text-amber-600"></i> Finance (Phase 2)
+        </button>
+      </div>
+
+      <!-- Tab Content Area -->
+      <div class="p-6 lg:p-8">
+        <!-- Header Info -->
+        <div id="module-header" class="mb-6 flex flex-wrap justify-between items-center gap-4"></div>
+
+        <!-- Two Column View -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <!-- Left: Capabilities List -->
+          <div class="lg:col-span-7 space-y-3">
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider">Functional Capabilities</h3>
+              <span id="tc-count-badge" class="text-xs px-2.5 py-0.5 rounded-full bg-slate-200 font-semibold text-slate-700"></span>
+            </div>
+            <div id="tc-list" class="space-y-2.5 max-h-[480px] overflow-y-auto pr-2"></div>
+          </div>
+
+          <!-- Right: Visual Simulation & Strategic Highlight -->
+          <div class="lg:col-span-5 flex flex-col gap-6">
+            <!-- Simulated Metric Box -->
+            <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-md border border-slate-800">
+              <div class="flex items-center justify-between mb-4">
+                <span id="preview-badge" class="text-xs font-semibold px-2.5 py-1 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Live Analytics Simulation</span>
+                <span class="text-xs text-slate-400"><i class="fa-regular fa-clock"></i> Live Feed</span>
+              </div>
+              <h4 id="preview-title" class="text-base font-bold mb-1">Monthly Trend Simulation</h4>
+              <p id="preview-subtitle" class="text-xs text-slate-400 mb-4">Breakdown across Consultation, Pharmacy &amp; Other amounts</p>
+              
+              <div class="h-44">
+                <canvas id="interactiveChart"></canvas>
+              </div>
+
+              <div id="preview-stats" class="grid grid-cols-3 gap-2 mt-4 pt-4 border-t border-slate-800 text-center"></div>
+            </div>
+
+            <!-- Business Impact -->
+            <div id="business-impact-card" class="p-5 rounded-2xl bg-sky-50 border border-sky-100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GOVERNANCE & ROLES MATRIX TABLE -->
+    <section class="glass-card rounded-2xl p-6 lg:p-8 shadow-sm">
+      <div class="mb-6">
+        <h3 class="text-lg font-bold text-slate-900">Module Capability &amp; Phase Matrix</h3>
+        <p class="text-xs text-slate-500">Comprehensive functional comparison and operational delivery roadmap</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead>
+            <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+              <th class="p-3 font-bold uppercase">Business Domain</th>
+              <th class="p-3 font-bold uppercase text-indigo-700">CRM (Phase 1)</th>
+              <th class="p-3 font-bold uppercase text-emerald-700">Clinic (Phase 1)</th>
+              <th class="p-3 font-bold uppercase text-sky-700">Customer (Phase 1)</th>
+              <th class="p-3 font-bold uppercase text-purple-700">Member (Phase 1)*</th>
+              <th class="p-3 font-bold uppercase text-amber-700">Finance (Phase 2)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-600">
+            <tr>
+              <td class="p-3 font-semibold text-slate-900">Status</td>
+              <td class="p-3"><span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">Ready to Use (30 Jul '26)</span></td>
+              <td class="p-3"><span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">Ready to Use (30 Jul '26)</span></td>
+              <td class="p-3"><span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">Ready to Use (30 Jul '26)</span></td>
+              <td class="p-3"><span class="text-purple-700 font-bold bg-purple-50 px-2 py-0.5 rounded">Post-PHR App Discussion</span></td>
+              <td class="p-3"><span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded">Phase 2 Scope</span></td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold text-slate-900">Account &amp; Auth</td>
+              <td class="p-3">Operations Login &amp; Notifications[cite: 2]</td>
+              <td class="p-3">Clinic Login &amp; Profile Setup[cite: 1]</td>
+              <td class="p-3">HR Login &amp; Profile Setup[cite: 3]</td>
+              <td class="p-3">Member Login &amp; Profile[cite: 5]</td>
+              <td class="p-3">Finance User Login</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold text-slate-900">Member Management</td>
+              <td class="p-3">Central Member Registry[cite: 2]</td>
+              <td class="p-3">Walk-in Member Verification[cite: 1]</td>
+              <td class="p-3 font-bold text-sky-700">Member Bulk Excel Upload[cite: 3]</td>
+              <td class="p-3">Member Dependent View[cite: 5]</td>
+              <td class="p-3">N/A</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold text-slate-900">Policy &amp; Limits</td>
+              <td class="p-3 font-bold text-indigo-700">Set Visit/Month/Year Caps[cite: 2]</td>
+              <td class="p-3">Read-only Entitlement Caps[cite: 1]</td>
+              <td class="p-3">View Spending Summary[cite: 3]</td>
+              <td class="p-3">View Remaining Balances</td>
+              <td class="p-3">N/A</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold text-slate-900">Claims &amp; Billing</td>
+              <td class="p-3">Global Claims Audit[cite: 2]</td>
+              <td class="p-3 font-bold text-emerald-700">Instant Manual / PDF Claim[cite: 1]</td>
+              <td class="p-3">Invoice &amp; MC Transparency[cite: 3]</td>
+              <td class="p-3">Personal Claims History[cite: 5]</td>
+              <td class="p-3 font-bold text-amber-700">Auto-Batching &amp; TPP Submission[cite: 4]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-[11px] text-slate-400 mt-3">*Note: Member Module is built under Phase 1 and will be aligned in strategic discussion once the PHR CCHS apps are completed[cite: 5].</p>
+    </section>
+
+  </main>
+
+  <script>
+    const moduleData = {
+      crm: {
+        title: "CRM Administration Portal",
+        badge: "Phase 1 • Ready to Use (Completed 30th July 2026)",
+        badgeColor: "bg-indigo-100 text-indigo-800 border-indigo-200",
+        description: "Central command center enabling operations staff to govern customer agreements, configure financial spending limits, orchestrate panel networks, and monitor nationwide claims.",
+        tcCount: "Core Operations System",
+        stats: [
+          { label: "Top-5 Customers", value: "Real-time" },
+          { label: "Top-5 Clinics", value: "Audited" },
+          { label: "Financial Total", value: "Auto-sum" }
+        ],
+        impact: {
+          icon: "fa-shield-halved",
+          title: "Governance & Limit Control",
+          desc: "Enforces strict corporate medical benefit policies (Per Visit, Monthly, and Annual Caps) preventing claim leakage and overbilling[cite: 2]."
+        },
+        chartData: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+          consultation: [1.2, 1.0, 1.8, 1.5, 2.8, 4.5, 3.8, 3.0, 3.2, 2.9, 0.8, 1.1],
+          pharmacy: [4.0, 3.2, 6.5, 8.2, 11.5, 12.8, 10.2, 8.5, 9.8, 8.2, 1.5, 4.2],
+          other: [1.0, 0.8, 1.5, 2.0, 2.6, 2.8, 2.1, 1.5, 2.4, 2.0, 0.4, 0.9]
+        },
+        cases: [
+          { id: "Operations Access", title: "Portal Authentication & Executive Analytics", desc: "Verifies secure access and macro KPIs: Count of customers, members, clinics, claims, and monthly volume trend charts[cite: 2]." },
+          { id: "Customer 360", title: "Corporate Customer & Policy Governance", desc: "Comprehensive management of corporate accounts: BRN/TIN/SST registration, Facilities, Benefit Limits (Per Visit/Month/Year), and Panel Network allocation[cite: 2]." },
+          { id: "Financial Insights", title: "Customer Specific Health Spending Dashboard", desc: "Drill-down analytics per corporate entity showing 12-month consultation, pharmacy, and diagnostic expense trends[cite: 2]." },
+          { id: "Member Management", title: "Member & Family Hierarchy Registry", desc: "Principal employee management, dependent linking (Spouse/Children), identification mapping (NRIC/Passport), and active toggle[cite: 2]." },
+          { id: "Claims Audit", title: "Cross-Clinic Claims Audit & Chronology", desc: "Full claims repository filterable by customer, clinic, and visit date with itemized diagnostic and chronological tracking[cite: 2]." },
+          { id: "Clinic Network", title: "Clinic Network Onboarding & Profile Registry", desc: "Registration of new clinics, operating hours configuration, PIC info, available facilities, and panelship status[cite: 2]." },
+          { id: "Administration", title: "Profile, Notifications & Customer Creation", desc: "In-app alerts for new panel agreements and dedicated corporate client onboarding workflows[cite: 2]." }
+        ]
+      },
+      clinic: {
+        title: "Clinic Healthcare Provider Portal",
+        badge: "Phase 1 • Ready to Use (Completed 30th July 2026)",
+        badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200",
+        description: "Provider-facing interface empowering clinics to verify patient entitlements, check remaining benefit balances in real time, and submit digitized claims with optional PDF attachments.",
+        tcCount: "Provider Management System",
+        stats: [
+          { label: "Claims Processing", value: "Instant" },
+          { label: "Limit Balance", value: "Real-time" },
+          { label: "PDF Attachment", value: "Supported" }
+        ],
+        impact: {
+          icon: "fa-bolt",
+          title: "Frictionless Point-of-Care Claims",
+          desc: "Eliminates manual paper claim forms. Clinics immediately see member benefit balances before providing treatment, reducing claim disputes[cite: 1]."
+        },
+        chartData: {
+          labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+          consultation: [7, 13, 23, 12, 19, 9],
+          pharmacy: [14, 25, 45, 24, 38, 18],
+          other: [2, 4, 8, 3, 6, 2]
+        },
+        cases: [
+          { id: "Provider Access", title: "Clinic Access & Financial Health Dashboard", desc: "Total invoiced sums, total claim count, average spend per claim, and unique patient volume counters[cite: 1]." },
+          { id: "Panel Check", title: "Corporate Panel Verification & Entitlements", desc: "Lists central and direct panel customers with instant visibility into employee/children coverage criteria and tax credentials[cite: 1]." },
+          { id: "Patient Search", title: "Patient Eligibility & Real-Time Balance Tracking", desc: "Rapid member eligibility search showing remaining Per Visit, Monthly, and Annual benefit balances prior to consultation[cite: 1]." },
+          { id: "Instant Claims", title: "Claim Creation (Manual & Smart PDF Upload)", desc: "Direct capture of MC days, Consultation, Pharmacy, and Other fees with supporting digital PDF upload[cite: 1]." },
+          { id: "Billing Tracking", title: "Clinic Invoicing & Chronology Tracking", desc: "Tracking generated invoice references, issue dates, due dates, and settlement reconciliation[cite: 1]." },
+          { id: "Profile Controls", title: "Alerts & Clinic Operating Profile Management", desc: "Operating feed and self-service maintenance of clinic operating hours, contact numbers, and SST registrations[cite: 1]." }
+        ]
+      },
+      customer: {
+        title: "Corporate Customer / HR Portal",
+        badge: "Phase 1 • Ready to Use (Completed 30th July 2026)",
+        badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
+        description: "Self-service HR portal for corporate enterprise clients to manage employee benefit, perform bulk enrollments via Excel, and monitor company-wide medical expenditures.",
+        tcCount: "Enterprise HR System",
+        stats: [
+          { label: "Excel Bulk Upload", value: "Supported" },
+          { label: "Top Diagnoses", value: "Analyzed" },
+          { label: "MC Utilization", value: "Top Employee" }
+        ],
+        impact: {
+          icon: "fa-users-gear",
+          title: "HR Operational Efficiency",
+          desc: "Reduces HR administrative work by 80% through self-service bulk employee enrollment and direct transparency into medical claim invoices and MC records[cite: 3]."
+        },
+        chartData: {
+          labels: ['Consultation', 'Pharmacy', 'Other Expenses'],
+          consultation: [303.9, 0, 0],
+          pharmacy: [0, 961.4, 0],
+          other: [0, 0, 321.7]
+        },
+        cases: [
+          { id: "HR Dashboard", title: "HR Analytics & Diagnostic Insights", desc: "Corporate-level analytics on Monthly Trends, Weekly Peaks, Top-5 Clinic Providers, Top-5 Diagnoses, and High Utilizers[cite: 3]." },
+          { id: "Direct Enrolment", title: "Single Member Enrollment & Status Toggle", desc: "Direct registration of employees with NRIC/Passport validation, effective dates, and instant activation[cite: 3]." },
+          { id: "Bulk Ingestion", title: "Enterprise Bulk Member Enrollment (Excel Upload)", desc: "High-volume employee onboarding via Excel (.xlsx, .xls) template parsing with instant verification[cite: 3]." },
+          { id: "Family Tree", title: "Dependent & Family Member Management", desc: "Adding children and spouses linked directly under the principal employee's corporate benefit profile[cite: 3]." },
+          { id: "Transparency", title: "Corporate Claims & MC Transparency", desc: "Detailed tracking of company claim invoices, attending clinic name, visit dates, medical leave (MC) duration, and itemized billing[cite: 3]." },
+          { id: "Notifications", title: "Alerts & Corporate Profile Management", desc: "Real-time updates regarding panel extensions, agreement statuses, and corporate billing details[cite: 3]." }
+        ]
+      },
+      member: {
+        title: "Member Module",
+        badge: "Phase 1 • Post-PHR Discussion",
+        badgeColor: "bg-purple-100 text-purple-800 border-purple-200",
+        description: "Employee and family member portal designed under Phase 1. Strategic alignment and deployment discussion will be finalized once the PHR CCHS apps are completed.",
+        tcCount: "Phase 1 (In Discussion)",
+        stats: [
+          { label: "Family View", value: "Enabled" },
+          { label: "Panel Lookup", value: "Integrated" },
+          { label: "PHR CCHS App", value: "Pending" }
+        ],
+        impact: {
+          icon: "fa-mobile-screen-button",
+          title: "Member Self-Service & PHR Convergence",
+          desc: "Will give employees direct transparency over their medical coverage and family claims history once connected with the broader PHR CCHS mobile ecosystem[cite: 5]."
+        },
+        chartData: {
+          labels: ['Medical Visits', 'Dental / Optical', 'Specialist Care'],
+          consultation: [12, 4, 2],
+          pharmacy: [8, 2, 1],
+          other: [1, 0, 0]
+        },
+        cases: [
+          { id: "Member Access", title: "Member Authentication & Personal Dashboard", desc: "Direct login providing employees immediate visibility into basic information, family dependents, and recent claims[cite: 5]." },
+          { id: "Family Directory", title: "Family Members & Dependent Directory", desc: "Comprehensive view of registered dependents (spouse and children) with NRIC/Passport and active statuses[cite: 5]." },
+          { id: "Claims History", title: "Personal Claims History & Invoicing", desc: "Full itemized list of past clinic visits, attending clinics, total claim charges, and issued medical certificates (MC)[cite: 5]." },
+          { id: "Provider Search", title: "Clinic & Panel Directory Search", desc: "Location and state-based directory for members to locate affiliated clinics and review operating hours and facilities[cite: 5]." },
+          { id: "PHR Strategic Alignment", title: "PHR CCHS App Integration (Discussion)", desc: "Under Phase 1 scope; rollout and mobile synchronization to be discussed following completion of PHR CCHS apps[cite: 5]." }
+        ]
+      },
+      finance: {
+        title: "Finance Module (Phase 2)",
+        badge: "Phase 2 • Strategic Roadmap",
+        badgeColor: "bg-amber-100 text-amber-800 border-amber-200",
+        description: "Comprehensive financial automation suite scheduled for Phase 2, designed to streamline claim batching, automate TPP submissions, and automate settlement invoicing.",
+        tcCount: "Phase 2 Planned",
+        stats: [
+          { label: "Claims Batching", value: "Phase 2" },
+          { label: "TPP Submissions", value: "Automated" },
+          { label: "Invoice Creation", value: "Direct" }
+        ],
+        impact: {
+          icon: "fa-coins",
+          title: "End-to-End Financial Settlement",
+          desc: "Phase 2 closes the billing loop by automatically aggregating processed clinic claims into batches, submitting to TPP, and generating payment invoices[cite: 4]."
+        },
+        chartData: {
+          labels: ['Q1 Target', 'Q2 Target', 'Q3 Target', 'Q4 Target'],
+          consultation: [120, 180, 240, 310],
+          pharmacy: [250, 320, 410, 520],
+          other: [80, 110, 140, 190]
+        },
+        cases: [
+          { id: "Phase 2 Integration", title: "Automated PDF Submission to TPP as Claims", desc: "Once point-of-care clinic consultation data is recorded, claims are compiled into PDF formats and submitted into TPP[cite: 4]." },
+          { id: "Batch Processing", title: "Claims Batching Engine", desc: "Processed medical claims are organized into structured batches for internal financial reconciliation[cite: 4]." },
+          { id: "Invoice Generation", title: "Automated Finance Invoicing for Payment", desc: "Finance module receives batched claims and automatically generates corporate payment invoices[cite: 4]." },
+          { id: "Full Settlement Loop", title: "Integrated Direct Business Lifecycle", desc: "Connects clinic submission directly to corporate invoicing without manual intervention[cite: 4]." }
+        ]
+      }
+    };
+
+    let currentModule = 'crm';
+    let chartInstance = null;
+
+    function renderModule(modKey) {
+      const mod = moduleData[modKey];
+      
+      // Update Tab Styles
+      ['crm', 'clinic', 'customer', 'member', 'finance'].forEach(k => {
+        const tab = document.getElementById(`tab-${k}`);
+        if (k === modKey) {
+          tab.className = "pb-3 text-sm tracking-wide font-bold text-sky-600 border-b-2 border-sky-600 flex items-center gap-2";
+        } else {
+          tab.className = "pb-3 text-sm tracking-wide font-semibold text-slate-500 hover:text-slate-800 flex items-center gap-2 border-b-2 border-transparent";
+        }
+      });
+
+      // Update Header
+      document.getElementById('module-header').innerHTML = `
+        <div>
+          <div class="flex items-center gap-2.5">
+            <span class="text-xs px-2.5 py-1 rounded-full font-bold border ${mod.badgeColor}">${mod.badge}</span>
+            <span class="text-xs text-slate-500 font-medium">${mod.tcCount}</span>
+          </div>
+          <h2 class="text-2xl font-extrabold text-slate-900 mt-1">${mod.title}</h2>
+          <p class="text-sm text-slate-600 mt-1 max-w-3xl">${mod.description}</p>
+        </div>
+      `;
+
+      document.getElementById('tc-count-badge').innerText = mod.tcCount;
+
+      // Update Capabilities List
+      const tcList = document.getElementById('tc-list');
+      tcList.innerHTML = mod.cases.map(c => `
+        <div class="p-3.5 rounded-xl border border-slate-200 bg-white hover:border-sky-300 hover:bg-sky-50/40 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded">${c.id}</span>
+            <span class="text-[10px] font-semibold ${modKey === 'finance' ? 'text-amber-600 bg-amber-50 border-amber-200' : (modKey === 'member' ? 'text-purple-600 bg-purple-50 border-purple-200' : 'text-emerald-600 bg-emerald-50 border-emerald-200')} border px-2 py-0.5 rounded-full">
+              ${modKey === 'finance' ? 'Phase 2 Planned' : (modKey === 'member' ? 'Phase 1 Scope' : 'Ready to Use')}
+            </span>
+          </div>
+          <h5 class="text-sm font-bold text-slate-900 mt-1.5">${c.title}</h5>
+          <p class="text-xs text-slate-600 mt-1 leading-relaxed">${c.desc}</p>
+        </div>
+      `).join('');
+
+      // Update Business Impact
+      document.getElementById('business-impact-card').innerHTML = `
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-sky-600 text-white flex items-center justify-center shrink-0 text-base">
+            <i class="fa-solid ${mod.impact.icon}"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-slate-900">${mod.impact.title}</h4>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">${mod.impact.desc}</p>
+          </div>
+        </div>
+      `;
+
+      // Update Preview Box Stats
+      document.getElementById('preview-stats').innerHTML = mod.stats.map(s => `
+        <div>
+          <p class="text-[10px] uppercase font-bold text-slate-400">${s.label}</p>
+          <p class="text-sm font-bold text-sky-400 mt-0.5">${s.value}</p>
+        </div>
+      `).join('');
+
+      renderChart(modKey);
+    }
+
+    function renderChart(modKey) {
+      const ctx = document.getElementById('interactiveChart').getContext('2d');
+      if (chartInstance) {
+        chartInstance.destroy();
+      }
+
+      const mod = moduleData[modKey];
+
+      let chartConfig = {
+        type: 'bar',
+        data: {
+          labels: mod.chartData.labels,
+          datasets: [
+            {
+              label: 'Consultation (MYR)',
+              data: mod.chartData.consultation,
+              backgroundColor: '#0284c7',
+              borderRadius: 4
+            },
+            {
+              label: 'Pharmacy (MYR)',
+              data: mod.chartData.pharmacy,
+              backgroundColor: '#10b981',
+              borderRadius: 4
+            },
+            {
+              label: 'Other (MYR)',
+              data: mod.chartData.other,
+              backgroundColor: '#f59e0b',
+              borderRadius: 4
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { color: '#94a3b8', boxWidth: 10, font: { size: 10 } }
+            }
+          },
+          scales: {
+            x: {
+              stacked: true,
+              grid: { display: false },
+              ticks: { color: '#94a3b8', font: { size: 9 } }
+            },
+            y: {
+              stacked: true,
+              grid: { color: '#334155' },
+              ticks: { color: '#94a3b8', font: { size: 9 } }
+            }
+          }
+        }
+      };
+
+      if (modKey === 'customer') {
+        chartConfig.data.datasets = [{
+          label: 'Total Spending (MYR K)',
+          data: [303.9, 961.4, 321.7],
+          backgroundColor: ['#0284c7', '#10b981', '#f59e0b'],
+          borderRadius: 6
+        }];
+        chartConfig.options.scales.x.stacked = false;
+        chartConfig.options.scales.y.stacked = false;
+      }
+
+      chartInstance = new Chart(ctx, chartConfig);
+    }
+
+    function switchModule(modKey) {
+      currentModule = modKey;
+      renderModule(modKey);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderModule('crm');
+    });
+  </script>
+</body>
+</html>
